@@ -1,0 +1,33 @@
+<div class="fix-content">
+	<div class="product-listing">
+		<h2>Employees</h2>
+
+		<br /> <br />
+
+		<div class="listingarea">
+
+			<table st-table="data" st-safe-src="employeeList" width="100%"
+				border="20" cellpadding="0" cellspacing="1"
+				class="table table-striped">
+				<thead>
+
+					<tr>
+						<th align="center">Employee Id</th>
+						<th align="center">Name</th>
+						<th align="center">Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="employee in data">
+						<td align="center">{{employee.nameEn}}</td>
+						<td align="center">{{employee.nameFr}}</td>
+						<td align="center">{{employee.nameEs}}</td>
+						
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+
+	</div>
+</div>

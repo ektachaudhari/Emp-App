@@ -1,0 +1,146 @@
+/*** DEFAULT COLORS/STYLES ***/
+/* Root menu */
+.dropdown-menu {
+   
+}
+/* Root links */
+.dropdown-menu a,
+.dropdown-menu a:link,
+.dropdown-menu a:visited {
+    text-decoration: none;
+   
+  
+}
+/* Root link hover */
+.dropdown-menu a:hover,
+.dropdown-menu li.dropdown-menu-hover > a {
+  color: #fff;
+}
+/* Root menu item hover */
+.dropdown-menu li:hover,
+.dropdown-menu li.dropdown-menu-hover {
+     background: #74b5db;
+}
+/* Submenus */
+.dropdown-menu ul {
+    background: #74b5db;
+ 	color: #fff;
+}
+/* Submenu item hover */
+.dropdown-menu ul li:hover,
+.dropdown-menu ul li.dropdown-menu-hover {
+    
+}
+
+/* Optional submenu drop shadow */
+.dropdown-menu-shadow a {
+  color: #fff !important;
+}
+
+/*** ESSENTIAL STYLES ***/
+.dropdown-menu {
+    white-space: nowrap;
+    display: inline-block;
+    /* IE7 inline-block fix */
+    *display: inline;
+    *zoom: 1;
+}
+.dropdown-menu,
+.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dropdown-menu ul {
+    display: none;
+    position: absolute;
+    z-index: 1000000;
+}
+.dropdown-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /* IE7 inline-block and padding fix */
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: bottom;
+	
+}
+.dropdown-menu li a {
+    display: block;
+}
+.dropdown-menu ul li {
+    position: relative;
+    display: block;
+	float:none !important;
+	width: 170px !important;
+}
+
+/* Optional submenu arrows */
+span.dropdown-menu-sub-indicator {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+    /* Image Replacement */
+    background-color: transparent;
+    background-image: url('../images/arrows-000000.png');
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    overflow: hidden;
+    /* IE7 image replacement fix */
+    *text-indent: -9999px;
+    /* IE7 inline-block fix */
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: middle;
+}
+span.dropdown-menu-sub-indicator:before {
+    /* Image replacement */
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+/* Arrow hovers */
+.dropdown-menu li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px -100px;
+	
+}
+
+.dropdown-menu-sub-indicator li { border-bottom: 1px solid #89c6e9; }
+.dropdown-menu-sub-indicator a:hover { background: #5d9fc6; }
+/* Point arrows to the right for anchors in subs */
+.dropdown-menu ul span.dropdown-menu-sub-indicator {
+    background-position: 0 0;
+}
+.dropdown-menu ul li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu ul li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px 0;
+}
+
+/* Vertical-style menu with default width */
+.dropdown-menu-vertical {
+    width: 250px;
+}
+.dropdown-menu-vertical li {
+    display: block;
+    position: relative;
+    /* IE7 fix */
+    *float: left;
+    *width: 100%;
+}
+.dropdown-menu-vertical span.dropdown-menu-sub-indicator {
+    background-position: 0 0;
+}
+.dropdown-menu-vertical li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu-vertical li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px 0;
+}
